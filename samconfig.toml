@@ -1,0 +1,24 @@
+version = 0.1
+[dev]
+[dev.deploy]
+[dev.deploy.parameters]
+stack_name = "sam-s3-fargate-trigger"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-twohu4dkpte7"
+s3_prefix = "sam-s3-fargate-trigger"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "SubnetId01=\"subnet-52c7ec18\" SubnetId02=\"subnet-4da1c763\" SecurityGroupId=\"sg-7acccc39\""
+image_repositories = []
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-s3-fargate-trigger"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-twohu4dkpte7"
+s3_prefix = "sam-s3-fargate-trigger"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "SubnetId01=\"subnet-61b62d06\" SubnetId02=\"subnet-52c7ec18\" SecurityGroupId=\"sg-7acccc39\""
+image_repositories = []
