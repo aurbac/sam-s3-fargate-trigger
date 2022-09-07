@@ -42,7 +42,10 @@ def lambda_handler(event, context):
                         
                         }
                     ],
-                    'taskRoleArn':TASK_ROLE_ARN
+                    'taskRoleArn':TASK_ROLE_ARN,
+                    'ephemeralStorage': {
+                        'sizeInGiB': 50
+                    }
                 },
                 networkConfiguration={
                     'awsvpcConfiguration': {
